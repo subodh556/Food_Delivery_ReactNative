@@ -19,7 +19,7 @@ const SignUp = () => {
         try {
             await createUser({ email,  password,  name });
 
-            router.replace('../');
+            router.replace('/');
         } catch(error: any) {
             Alert.alert('Error', error.message);
         } finally {
